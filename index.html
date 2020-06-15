@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h2>Add user:</h2>
+  <form id="add-user">
+    <input placeholder="Full name" type="text" name="fullName" required>
+    <input placeholder="Email" type="text" name="email" required>
+    <input placeholder="Age" type="number" name="age" required>
+    <input placeholder="Passport Num" type="text" name="passport" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>Sort by:</h2>
+  <form id="sort-users">
+    <select name="by" id="sort-by">
+      <option value="fullName">Full name</option>
+      <option value="email">Email</option>
+      <option value="age">Age</option>
+      <option value="passport">Passport</option>
+    </select>
+    <button type="submit">Sort</button>
+  </form>
+
+  <ul id="users-list">
+
+  </ul>
+
+  <script src="./js/addUser.js"></script>
+</body>
+</html>
